@@ -1,9 +1,10 @@
 import React from "react";
+import Navbar from "./components/Navbar";
 
 export default function App() {
   return (
     <div>
-      <h1 className="bg-red-400">hello world</h1>
+      <Navbar />
     </div>
   );
 }
