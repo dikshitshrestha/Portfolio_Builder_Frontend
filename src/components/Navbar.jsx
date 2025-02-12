@@ -4,7 +4,7 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import photo from "../assets/logo.png";
 export default function Navbar() {
   return (
-    <div className="flex items-center justify-between py-[35px] px-[120px]">
+    <div className="flex items-center justify-between py-[30px] px-[120px]">
       <div className="text-2xl font-bold flex items-center gap-1">
         <img src={photo} alt="logo" className="h-[50px]" />
         <h1>Nirvanta</h1>
