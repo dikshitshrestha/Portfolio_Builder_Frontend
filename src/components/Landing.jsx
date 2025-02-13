@@ -231,7 +231,7 @@ export default function Landing() {
             </div>
             <div className="w-1/3 text-center">
               <div className="flex items-center justify-center">
-                <img src={performance} alt="" className="h-48" />
+                <img src={performance} alt="" className="h-52" />
               </div>
               <h1 className="text-2xl font-semibold py-3">
                 Built For Performance
