@@ -439,7 +439,7 @@ export default function Beginners() {
             </div>
           </div>
         </div>
-        <div className="relative top-[590px] z-10">
+        <div className="relative top-[590px] z-10 mt-20">
           <PageEnd />
         </div>
       </div>
