@@ -26,10 +26,42 @@ import logo4 from "../assets/logo4.png";
 import image1 from "../assets/portfolio1.jpg";
 import image2 from "../assets/portfolio2.jpg";
 import PageEnd from "./PageEnd";
+import { useState } from "react";
+import bg1 from "../assets/bg.jpg";
+import bg2 from "../assets/document.jpg";
+import bg3 from "../assets/developer.jpg";
+import bg4 from "../assets/desktop.jpg";
+import bg5 from "../assets/portfolio2.jpg";
+import bg6 from "../assets/womancoffee.jpg";
+import bg7 from "../assets/portfolio1.jpg";
+import bg8 from "../assets/project.jpg";
+import bg9 from "../assets/marketers.jpg";
+import Hero from "./Hero";
 
 export default function Landing() {
+  const images = {
+    live: bg1,
+    layout: bg2,
+    header: bg3,
+    mega: bg4,
+    footer: bg5,
+    form: bg6,
+    canvas: bg7,
+    setup: bg8,
+    performance: bg9,
+  };
+
+  const [bgImage, setBgImage] = useState(bg1);
+
+  const [activeButton, setActiveButton] = useState("live");
+
+  function handleClick(key) {
+    setActiveButton(key);
+    setBgImage(images[key]);
+  }
   return (
     <div>
+      <Hero />
       <div className="px-[120px] py-20 flex gap-7">
         <a href="#" className="w-1/3">
           <div className="bg-yellow-300 h-[550px] px-16 py-12 rounded-md cursor-pointer hover:scale-y-105 hover:scale-x-105 transition-transform duration-500 origin-bottom hover:bg-yellow-400">
@@ -138,63 +170,59 @@ export default function Landing() {
           </h2>
         </div>
       </div>
-      <div className="px-[120px] py-5">
+      <div className="px-[120px] py-5 flex">
         <div className="flex flex-col gap-3 w-1/4">
-          <a href="#">
-            <div className="py-3 px-5 w-64 text-xl font-semibold flex items-center gap-1.5 hover:bg-gray-100 rounded-md">
-              <FaFileCode />
-              Live Visual Builder
-            </div>
-          </a>
-          <a href="#">
-            <div className="py-3 px-5 w-64 text-xl font-semibold flex items-center gap-1.5 hover:bg-gray-100 rounded-md">
-              <TbLayoutFilled />
-              Layout Builder
-            </div>
-          </a>
-          <a href="#">
-            <div className="py-3 px-5 w-64 text-xl font-semibold flex items-center gap-1.5 rounded-md hover:bg-gray-100">
-              <RiLayoutTopFill />
-              Header Builder
-            </div>
-          </a>
-          <a href="#">
-            <div className="py-3 px-5 w-64 text-xl font-semibold flex items-center gap-1.5 rounded-md hover:bg-gray-100">
-              <ImNewspaper />
-              Mega Menu
-            </div>
-          </a>
-          <a href="#">
-            <div className="py-3 px-5 w-64 text-xl font-semibold flex items-center gap-1.5 rounded-md hover:bg-gray-100">
-              <RiLayoutBottomFill />
-              Footer Builder
-            </div>
-          </a>
-          <a href="#">
-            <div className="py-3 px-5 w-64 text-xl font-semibold flex items-center gap-1.5 rounded-md hover:bg-gray-100">
-              <SiTask />
-              Form Builder
-            </div>
-          </a>
-          <a href="#">
-            <div className="py-3 px-5 w-64 text-xl font-semibold flex items-center gap-1.5 rounded-md hover:bg-gray-100">
-              <RiTodoFill />
-              Off Canvas
-            </div>
-          </a>
-          <a href="#">
-            <div className="py-3 px-5 w-64 text-xl font-semibold flex items-center gap-1.5 rounded-md hover:bg-gray-100">
-              <ImCheckboxChecked />
-              Setup Wizard
-            </div>
-          </a>
-          <a href="#">
-            <div className="py-3 px-5 w-64 text-xl font-semibold flex items-center gap-1.5 rounded-md hover:bg-gray-100">
-              <GrTasks />
-              Performance Wizard
-            </div>
-          </a>
+          {[
+            { key: "live", label: "Live Visual Builder", icon: <FaFileCode /> },
+            {
+              key: "layout",
+              label: "Layout Builder",
+              icon: <TbLayoutFilled />,
+            },
+            {
+              key: "header",
+              label: "Header Builder",
+              icon: <RiLayoutTopFill />,
+            },
+            { key: "mega", label: "Mega Menu", icon: <ImNewspaper /> },
+            {
+              key: "footer",
+              label: "Footer Builder",
+              icon: <RiLayoutBottomFill />,
+            },
+            { key: "form", label: "Form Builder", icon: <SiTask /> },
+            { key: "canvas", label: "Off Canvas", icon: <RiTodoFill /> },
+            {
+              key: "setup",
+              label: "Setup Wizard",
+              icon: <ImCheckboxChecked />,
+            },
+            {
+              key: "performance",
+              label: "Performance Wizard",
+              icon: <GrTasks />,
+            },
+          ].map(({ key, label, icon }) => (
+            <button
+              key={key}
+              className={`py-3 px-5 w-64 text-xl font-semibold flex items-center gap-1.5 rounded-md hover:bg-gray-100 ${
+                activeButton === key ? "bg-gray-100" : "bg-white"
+              }`}
+              onClick={() => handleClick(key)}
+            >
+              {label}
+              {icon}
+            </button>
+          ))}
         </div>
+        <div
+          className="h-[600px] w-3/4 rounded-md"
+          style={{
+            backgroundImage: `url(${bgImage})`,
+            backgroundSize: "cover",
+            transition: "background 0.3s ease-in-out",
+          }}
+        ></div>
       </div>
       <div className="px-[120px] py-28">
         <div className="text-center">
@@ -400,7 +428,9 @@ export default function Landing() {
           </div>
         </div>
       </div>
-      <PageEnd />
+      <div className="mt-20">
+        <PageEnd />
+      </div>
     </div>
   );
 }
