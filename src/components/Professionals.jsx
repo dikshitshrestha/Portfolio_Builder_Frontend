@@ -33,8 +33,31 @@ import roadmap from "../assets/roadmap.png";
 import update from "../assets/updates.png";
 import patcher from "../assets/maintenance.png";
 import PageEnd from "./PageEnd";
+import bg1 from "../assets/desktop.jpg";
+import bg2 from "../assets/document.jpg";
+import bg3 from "../assets/developer.jpg";
+import bg4 from "../assets/marketers.jpg";
+import bg5 from "../assets/portfolio1.jpg";
+import bg6 from "../assets/womancoffee.jpg";
 
 export default function Professionals() {
+  const image = {
+    header: bg1,
+    layout: bg2,
+    footer: bg3,
+    commerce: bg4,
+    form: bg5,
+    canvas: bg6,
+  };
+
+  const [activeButton, setActiveButton] = useState("header");
+  const [bgImage, setBgImage] = useState(bg1);
+
+  function handleClick(key) {
+    setActiveButton(key);
+    setBgImage(image[key]);
+  }
+
   return (
     <div>
       <div className="h-[600px] flex">
@@ -176,46 +199,57 @@ export default function Professionals() {
           </h1>
           <div className="py-16 flex gap-10">
             <div className="flex flex-col gap-3 h-[480px]">
-              <div>
-                <button className="text-xl font-semibold ease-in-out duration-300 hover:bg-gray-50 py-4 rounded-md px-6 w-56 flex items-center gap-2">
-                  <RiLayoutTopFill />
-                  Header Builder
+              {[
+                {
+                  key: "header",
+                  label: "Header Builder",
+                  icon: <RiLayoutTopFill />,
+                },
+                {
+                  key: "layout",
+                  label: "Layout Builder",
+                  icon: <TbLayoutFilled />,
+                },
+                {
+                  key: "footer",
+                  label: "Footer Builder",
+                  icon: <RiLayoutBottomFill />,
+                },
+                {
+                  key: "commerce",
+                  label: "WooCommerce",
+                  icon: <BsCartDashFill />,
+                },
+                {
+                  key: "form",
+                  label: "Form Builder",
+                  icon: <MdOutlineDocumentScanner />,
+                },
+                {
+                  key: "canvas",
+                  label: "Off Canvas",
+                  icon: <BsReverseLayoutTextWindowReverse />,
+                },
+              ].map(({ key, label, icon }) => (
+                <button
+                  key={key}
+                  className={`text-xl font-semibold ease-in-out duration-200 hover:bg-gray-50 py-4 rounded-md px-6 w-56 flex items-center gap-2 ${
+                    activeButton === key ? "bg-gray-50" : "bg-transparent"
+                  }`}
+                  onClick={() => handleClick(key)}
+                >
+                  {label} {icon}
                 </button>
-              </div>
-              <div>
-                <button className="text-xl font-semibold ease-in-out duration-300 hover:bg-gray-50 py-4 rounded-md px-6 w-56 flex items-center gap-2">
-                  <TbLayoutFilled />
-                  Layout Builder
-                </button>
-              </div>
-              <div>
-                <button className="text-xl font-semibold ease-in-out duration-300 hover:bg-gray-50 py-4 rounded-md px-6 w-56 flex items-center gap-2">
-                  <RiLayoutBottomFill />
-                  Footer Builder
-                </button>
-              </div>
-              <div>
-                <button className="text-xl font-semibold ease-in-out duration-300 hover:bg-gray-50 py-4 rounded-md pl-6 w-56 flex items-center gap-2">
-                  <BsCartDashFill />
-                  WooCommerce
-                </button>
-              </div>
-              <div>
-                <button className="text-xl font-semibold ease-in-out duration-300 hover:bg-gray-50 py-4 rounded-md px-6 w-56 flex items-center gap-2">
-                  <MdOutlineDocumentScanner />
-                  Form Builder
-                </button>
-              </div>
-              <div>
-                <button className="text-xl font-semibold ease-in-out duration-300 hover:bg-gray-50 py-4 rounded-md px-6 w-56 flex items-center gap-2">
-                  <BsReverseLayoutTextWindowReverse />
-                  Off Canvas
-                </button>
-              </div>
+              ))}
             </div>
-            <div className="h-[600px] w-4/5">
-              <div>bg image here</div>
-            </div>
+            <div
+              className="h-[600px] w-4/5"
+              style={{
+                backgroundImage: `url(${bgImage})`,
+                backgroundSize: "cover",
+                transition: "background 0.3s ease-in-out",
+              }}
+            ></div>
           </div>
         </div>
         <div className="grid grid-cols-2 grid-rows-2 gap-14 text-center">
