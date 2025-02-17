@@ -37,6 +37,7 @@ import bg7 from "../assets/portfolio1.jpg";
 import bg8 from "../assets/project.jpg";
 import bg9 from "../assets/marketers.jpg";
 import Hero from "./Hero";
+import { NavLink } from "react-router-dom";
 
 export default function Landing() {
   const images = {
@@ -61,9 +62,8 @@ export default function Landing() {
   }
   return (
     <div>
-      <Hero />
       <div className="px-[120px] py-20 flex gap-7">
-        <a href="#" className="w-1/3">
+        <NavLink to="/beginners" className="w-1/3">
           <div className="bg-yellow-300 h-[550px] px-16 py-12 rounded-md cursor-pointer hover:scale-y-105 hover:scale-x-105 transition-transform duration-500 origin-bottom hover:bg-yellow-400">
             <div className="text-center text-lg font-semibold">
               For Beginners
@@ -92,8 +92,8 @@ export default function Landing() {
               </div>
             </div>
           </div>
-        </a>
-        <a href="#" className="w-1/3">
+        </NavLink>
+        <NavLink to="/marketers" className="w-1/3">
           <div className="bg-lime-300 h-[550px] px-16 py-12 rounded-md cursor-pointer transition-transform duration-500 hover:scale-105 origin-bottom hover:bg-lime-400">
             <div className="text-center text-lg font-semibold">
               For Marketers
@@ -122,8 +122,8 @@ export default function Landing() {
               </div>
             </div>
           </div>
-        </a>
-        <a href="#" className="w-1/3">
+        </NavLink>
+        <NavLink to="/professionals" className="w-1/3">
           <div className=" bg-sky-300 h-[550px] px-16 py-12 rounded-md cursor-pointer transition-transform duration-500 hover:scale-105 origin-bottom hover:bg-sky-400">
             <div className="text-center text-lg font-semibold">
               For Professionals
@@ -152,7 +152,7 @@ export default function Landing() {
               </div>
             </div>
           </div>
-        </a>
+        </NavLink>
       </div>
       <div className="px-[120px] py-16">
         <div className="flex justify-center">
