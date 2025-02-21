@@ -37,7 +37,7 @@ import bg1 from "../assets/desktop.jpg";
 import bg2 from "../assets/document.jpg";
 import bg3 from "../assets/developer.jpg";
 import bg4 from "../assets/marketers.jpg";
-import bg5 from "../assets/portfolio1.jpg";
+import bg5 from "../assets/Portfolio1.jpg";
 import bg6 from "../assets/womancoffee.jpg";
 
 export default function Professionals() {
