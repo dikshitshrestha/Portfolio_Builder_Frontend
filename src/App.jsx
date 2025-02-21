@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Landing from "./components/Landing";
@@ -7,78 +8,28 @@ import Marketers from "./components/Marketers";
 import Professionals from "./components/Professionals";
 import Hosting from "./components/Hosting";
 import Customization from "./components/Customization";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 export default function App() {
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: (
-        <>
-          <Navbar />
-          <Hero />
-          <Landing />
-        </>
-      ),
-    },
-    {
-      path: "/beginners",
-      element: (
-        <>
-          <Navbar />
-          <Beginners />
-        </>
-      ),
-    },
-    {
-      path: "/professionals",
-      element: (
-        <>
-          <Navbar />
-          <Professionals />
-        </>
-      ),
-    },
-    {
-      path: "/marketers",
-      element: (
-        <>
-          <Navbar />
-          <Marketers />
-        </>
-      ),
-    },
-    {
-      path: "/hosting",
-      element: (
-        <>
-          <Navbar />
-          <Hosting />
-        </>
-      ),
-    },
-    {
-      path: "/customization",
-      element: (
-        <>
-          <Navbar />
-          <Customization />
-        </>
-      ),
-    },
-    {
-      path: "/landing",
-      element: (
-        <>
-          <Navbar />
-          <Landing />
-        </>
-      ),
-    },
-  ]);
   return (
-    <div>
-      <RouterProvider router={router} />
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <Landing />
+            </>
+          }
+        />
+        <Route path="/beginners" element={<Beginners />} />
+        <Route path="/professionals" element={<Professionals />} />
+        <Route path="/marketers" element={<Marketers />} />
+        <Route path="/hosting" element={<Hosting />} />
+        <Route path="/customization" element={<Customization />} />
+        <Route path="/landing" element={<Landing />} />
+      </Routes>
+    </Router>
   );
 }
