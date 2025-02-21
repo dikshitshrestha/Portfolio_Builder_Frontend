@@ -23,8 +23,8 @@ import logo1 from "../assets/logo1.png";
 import logo2 from "../assets/logo2.png";
 import logo3 from "../assets/logo3.png";
 import logo4 from "../assets/logo4.png";
-import image1 from "../assets/portfolio1.jpg";
-import image2 from "../assets/portfolio2.jpg";
+import image1 from "../assets/Portfolio1.jpg";
+import image2 from "../assets/Portfolio2.jpg";
 import PageEnd from "./PageEnd";
 import { useState } from "react";
 import bg1 from "../assets/bg.jpg";
@@ -36,7 +36,6 @@ import bg6 from "../assets/womancoffee.jpg";
 import bg7 from "../assets/portfolio1.jpg";
 import bg8 from "../assets/project.jpg";
 import bg9 from "../assets/marketers.jpg";
-import Hero from "./Hero";
 import { NavLink } from "react-router-dom";
 
 export default function Landing() {
