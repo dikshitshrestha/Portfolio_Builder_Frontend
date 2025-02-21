@@ -8,6 +8,7 @@ import Marketers from "./components/Marketers";
 import Professionals from "./components/Professionals";
 import Hosting from "./components/Hosting";
 import Customization from "./components/Customization";
+import PageEnd from "./components/PageEnd";
 
 export default function App() {
   return (
@@ -27,9 +28,17 @@ export default function App() {
         <Route path="/professionals" element={<Professionals />} />
         <Route path="/marketers" element={<Marketers />} />
         <Route path="/hosting" element={<Hosting />} />
-        <Route path="/customization" element={<Customization />} />
+        <Route
+          path="/customization"
+          element={
+            <>
+              <Customization />
+            </>
+          }
+        />
         <Route path="/landing" element={<Landing />} />
       </Routes>
+      <PageEnd />
     </Router>
   );
 }

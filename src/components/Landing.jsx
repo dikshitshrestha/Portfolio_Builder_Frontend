@@ -60,8 +60,8 @@ export default function Landing() {
     setBgImage(images[key]);
   }
   return (
-    <div>
-      <div className="px-[120px] py-20 flex gap-7">
+    <div className="container mx-auto">
+      <div className="lg:px-[120px] 2xl:px-0 py-20 flex gap-7">
         <NavLink to="/beginners" className="w-1/3">
           <div className="bg-yellow-300 h-[550px] px-16 py-12 rounded-md cursor-pointer hover:scale-y-105 hover:scale-x-105 transition-transform duration-500 origin-bottom hover:bg-yellow-400">
             <div className="text-center text-lg font-semibold">
@@ -426,9 +426,6 @@ export default function Landing() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="mt-20">
-        <PageEnd />
       </div>
     </div>
   );

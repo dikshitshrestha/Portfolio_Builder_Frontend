@@ -12,7 +12,7 @@ import { IoMdCheckmark } from "react-icons/io";
 
 export default function Customization() {
   return (
-    <div>
+    <div className="container mx-auto">
       <div className="h-[550px] flex">
         <div className="w-1/2">
           <img src={expert} alt="expert" className="h-full object-cover" />
@@ -141,7 +141,6 @@ export default function Customization() {
           </div>
         </div>
       </div>
-      <PageEnd />
     </div>
   );
 }

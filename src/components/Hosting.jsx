@@ -13,7 +13,7 @@ import PageEnd from "./PageEnd.jsx";
 
 export default function Hosting() {
   return (
-    <div>
+    <div className="container mx-auto">
       <div className="h-[550px] flex">
         <div className="w-1/2">
           <img src={desktop} alt="desktop" className="h-full object-cover" />
@@ -167,7 +167,6 @@ export default function Hosting() {
           />
         </div>
       </div>
-      <PageEnd />
     </div>
   );
 }

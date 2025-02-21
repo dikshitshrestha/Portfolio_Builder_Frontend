@@ -3,8 +3,8 @@ import logo from "../assets/Logo.png";
 
 export default function PageEnd() {
   return (
-    <div>
-      <div className="bg-zinc-900 py-16 text-white flex justify-evenly">
+    <div className="bg-zinc-900 py-16 text-white mt-20">
+      <div className="container mx-auto lg:flex justify-evenly">
         <div className="flex items-center gap-1.5">
           <img src={logo} alt="logo" className="h-10" />
           <h1 className="text-3xl font-semibold">Nirvanta</h1>

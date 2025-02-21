@@ -4,7 +4,7 @@ import photo from "../assets/Portfolio1.jpg";
 import photo2 from "../assets/Portfolio2.jpg";
 export default function Hero() {
   return (
-    <div className="px-[120px] py-10 flex">
+    <div className="container mx-auto lg:px-[120px] lg:py-10 flex">
       <div className="w-1/2">
         <div className="text-6xl font-bold space-y-3">
           <h1>The Ultimate</h1>

@@ -23,12 +23,12 @@ import document from "../assets/document.jpg";
 
 export default function Beginners() {
   return (
-    <div>
+    <div className="container mx-auto">
       <div className="h-[680px] bg-yellow-300 flex">
         <div className="h-full w-3/6">
           <img src={photo} alt="photo" className="h-full object-cover" />
         </div>
-        <div className="h-full py-28 px-24">
+        <div className="h-full py-28 lg:px-24">
           <h1 className="text-xl font-semibold text-zinc-800">
             Nirvanta Is For Beginners
           </h1>
@@ -141,63 +141,67 @@ export default function Beginners() {
           </div>
         </div>
       </div>
-      <div className="relative w-full h-auto">
-        <div className="relative w-full z-10">
-          <img src={banner} alt="photo" className="w-full" />
-        </div>
-        <div className="absolute w-full px-[120px] h-auto bg-yellow-50 z-0 top-[200px]">
-          <div className="pt-64 text-center">
-            <h1 className="text-5xl font-bold text-gray-800">
-              What Is Nirvanta?
-            </h1>
-            <div className="py-8 text-xl text-gray-700 flex flex-col gap-2">
-              <p>
-                Nirvanta is a WordPress Website Builder with an award winning
-                history of providing reliable &
-              </p>
-              <p>intuitive design tools to individuals of all skill levels.</p>
-            </div>
+      <div className="w-full h-auto">
+        <div className="relative">
+          <div className="relative w-full z-10">
+            <img src={banner} alt="photo" className="w-full" />
           </div>
-          <div className="flex gap-8 py-20 text-center">
-            <div className="w-1/3">
-              <div className="h-64 flex justify-center items-center">
-                <img src={wordpress} alt="wordpress" />
-              </div>
-              <div className="py-8">
-                <h1 className="text-2xl mb-2 font-semibold">
-                  Based On WordPress
-                </h1>
-                <div className="text-zinc-600">
-                  <p>The #1 Content Management System, powering</p>
-                  <p>40% of the entire internet.</p>
-                </div>
-              </div>
-            </div>
-            <div className="w-1/3">
-              <div className="h-64">
-                <img src={design} alt="design" />
-              </div>
-              <div className="py-8">
-                <h1 className="text-2xl mb-2 font-semibold">
-                  Creative Freedom
-                </h1>
-                <div className="text-zinc-600">
-                  <p>To design any style of website, with the only limit</p>
-                  <p>being your imagination.</p>
-                </div>
+          <div className="absolute w-full px-[120px] h-auto bg-yellow-50 z-0 top-[200px]">
+            <div className="pt-64 text-center">
+              <h1 className="text-5xl font-bold text-gray-800">
+                What Is Nirvanta?
+              </h1>
+              <div className="py-8 text-xl text-gray-700 flex flex-col gap-2">
+                <p>
+                  Nirvanta is a WordPress Website Builder with an award winning
+                  history of providing reliable &
+                </p>
+                <p>
+                  intuitive design tools to individuals of all skill levels.
+                </p>
               </div>
             </div>
-            <div className="w-1/3">
-              <div className="h-64 flex items-center">
-                <img src={prebuilt} alt="prebuilt" />
+            <div className="flex gap-8 py-20 text-center">
+              <div className="w-1/3">
+                <div className="h-64 flex justify-center items-center">
+                  <img src={wordpress} alt="wordpress" />
+                </div>
+                <div className="py-8">
+                  <h1 className="text-2xl mb-2 font-semibold">
+                    Based On WordPress
+                  </h1>
+                  <div className="text-zinc-600">
+                    <p>The #1 Content Management System, powering</p>
+                    <p>40% of the entire internet.</p>
+                  </div>
+                </div>
               </div>
-              <div className="py-8">
-                <h1 className="text-2xl mb-2 font-semibold">
-                  108 Prebuilt Websites
-                </h1>
-                <div className="text-zinc-600">
-                  <p>Built to save you time. Designed with usability &</p>
-                  <p>flexibility in mind</p>
+              <div className="w-1/3">
+                <div className="h-64">
+                  <img src={design} alt="design" />
+                </div>
+                <div className="py-8">
+                  <h1 className="text-2xl mb-2 font-semibold">
+                    Creative Freedom
+                  </h1>
+                  <div className="text-zinc-600">
+                    <p>To design any style of website, with the only limit</p>
+                    <p>being your imagination.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-1/3">
+                <div className="h-64 flex items-center">
+                  <img src={prebuilt} alt="prebuilt" />
+                </div>
+                <div className="py-8">
+                  <h1 className="text-2xl mb-2 font-semibold">
+                    108 Prebuilt Websites
+                  </h1>
+                  <div className="text-zinc-600">
+                    <p>Built to save you time. Designed with usability &</p>
+                    <p>flexibility in mind</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -293,7 +297,7 @@ export default function Beginners() {
             </div>
           </div>
         </div>
-        <div className="relative w-full z-10 top-[680px] py-32">
+        <div className="w-full z-10 top-[680px] py-32">
           <hr />
           <div className="py-28 px-[120px]">
             <div className="text-center mb-20">
@@ -438,9 +442,6 @@ export default function Beginners() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="relative top-[590px] z-10 mt-20">
-          <PageEnd />
         </div>
       </div>
     </div>
