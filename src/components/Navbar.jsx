@@ -1,7 +1,7 @@
 import React from "react";
 import { BsStars } from "react-icons/bs";
 import { RiArrowDropDownLine } from "react-icons/ri";
-import photo from "../assets/logo.png";
+import photo from "../assets/Logo.png";
 import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
@@ -47,7 +47,9 @@ export default function Navbar() {
         <NavLink
           to="/hosting"
           className={({ isActive }) =>
-            `hover:bg-gray-100 hover:cursor-pointer p-2 duration-500 ease-in-out rounded-md ${isActive ? "bg-gray-100" : ""}`
+            `hover:bg-gray-100 hover:cursor-pointer p-2 duration-500 ease-in-out rounded-md ${
+              isActive ? "bg-gray-100" : ""
+            }`
           }
         >
           Hosting
