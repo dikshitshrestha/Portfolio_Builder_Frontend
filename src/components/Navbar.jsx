@@ -5,12 +5,12 @@ import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between py-4 lg:py-[30px] lg:px-[120px]">
-      <div className="lg:text-2xl text-base font-bold flex items-center lg::gap-1">
-        <img src={photo} alt="logo" className="lg::h-[50px] h-4" />
+    <div className="container mx-auto flex flex-col md:flex-row md:px-12 items-center justify-between py-4 lg:py-[30px] lg:px-[120px]">
+      <div className="xl:text-2xl text-base font-bold flex items-center md:gap-1">
+        <img src={photo} alt="logo" className="xl:h-[50px] lg:h-8 h-4" />
         <h1 className="text-xs text-center lg:text-xl">Nirvanta</h1>
       </div>
-      <div className="flex py-2 lg:font-medium lg:text-lg text-xs items-center gap-3 lg:flex lg:gap-8">
+      <div className="flex py-2 lg:font-medium xl:text-lg text-xs items-center gap-3 lg:flex lg:gap-8">
         <NavLink
           to="/"
           className={({ isActive }) =>
@@ -52,7 +52,7 @@ export default function Navbar() {
           Hosting
         </NavLink>
       </div>
-      <div className="lg:text-lg text-xs border px-1 py-2 lg:px-3 lg:py-2 border-black rounded-md hover:bg-black hover:text-white duration-500 ease-in-out">
+      <div className="xl:text-lg text-xs border px-1 py-2 lg:px-3 lg:py-2 border-black rounded-md hover:bg-black hover:text-white duration-500 ease-in-out">
         <NavLink to="#" className="flex flex-row items-center gap-2">
           <BsStars />
           Nirvanta Log in

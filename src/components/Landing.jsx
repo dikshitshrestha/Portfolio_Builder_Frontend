@@ -60,16 +60,16 @@ export default function Landing() {
   }
   return (
     <div className="container mx-auto px-4">
-      <div className="lg:px-[120px] xl:px-[120px] gap-5 lg:py-20 flex lg:flex-row flex-col lg:gap-7">
+      <div className="2xl:px-[120px] gap-5 2xl:py-20 lg:py-10 flex lg:flex-row flex-col lg:gap-7">
         <NavLink to="/beginners" className="w-full">
-          <div className="bg-yellow-300 lg:h-[550px] lg:px-16 py-4 lg:py-12 rounded-md cursor-pointer hover:scale-y-105 hover:scale-x-105 transition-transform duration-500 origin-bottom hover:bg-yellow-400">
-            <div className="text-center text-sm lg:text-lg font-semibold">
+          <div className="bg-yellow-300 2xl:h-[550px] 2xl:px-16 py-4 2xl:py-12 rounded-md cursor-pointer hover:scale-y-105 hover:scale-x-105 transition-transform duration-500 origin-bottom hover:bg-yellow-400">
+            <div className="text-center text-sm xl:text-lg font-semibold">
               For Beginners
             </div>
-            <div className="lg:py-3 text-xl py-1.5 text-center lg:text-3xl font-bold">
+            <div className="lg:py-3 text-xl py-1.5 text-center 2xl:text-3xl font-bold">
               <h1>Launch Your First Website</h1>
             </div>
-            <div className="lg:py-8 py-3 flex justify-center">
+            <div className="2xl:py-8 py-3 flex justify-center">
               <img src={photo1} alt="photo" className="lg:h-44 h-36" />
             </div>
             <div className="flex justify-center py-2 gap-1.5">
@@ -91,14 +91,14 @@ export default function Landing() {
           </div>
         </NavLink>
         <NavLink to="/marketers" className="w-full">
-          <div className="bg-lime-300 lg:h-[550px] lg:px-16 py-4 lg:py-12 rounded-md cursor-pointer hover:scale-y-105 hover:scale-x-105 transition-transform duration-500 origin-bottom hover:bg-lime-400">
-            <div className="text-center text-sm lg:text-lg font-semibold">
+          <div className="bg-lime-300 2xl:h-[550px] 2xl:px-16 py-4 2xl:py-12 rounded-md cursor-pointer hover:scale-y-105 hover:scale-x-105 transition-transform duration-500 origin-bottom hover:bg-lime-400">
+            <div className="text-center text-sm 2xl:text-lg font-semibold">
               For Marketers
             </div>
-            <div className="lg:py-3 text-xl py-1.5 text-center lg:text-3xl font-bold">
-              <h1>Generate Leads and Conversions</h1>
+            <div className="lg:py-3 text-xl py-1.5 text-center 2xl:text-3xl font-bold">
+              <h1>Create Leads and Conversions</h1>
             </div>
-            <div className="lg:py-8 py-3 flex justify-center">
+            <div className="2xl:py-8 py-3 flex justify-center">
               <img src={photo2} alt="photo" className="lg:h-44 h-36" />
             </div>
             <div className="flex justify-center gap-1.5 py-2">
@@ -120,14 +120,14 @@ export default function Landing() {
           </div>
         </NavLink>
         <NavLink to="/professionals" className="w-full">
-          <div className="bg-sky-300 lg:h-[550px] lg:px-16 py-4 lg:py-12 rounded-md cursor-pointer hover:scale-y-105 hover:scale-x-105 transition-transform duration-500 origin-bottom hover:bg-sky-400">
-            <div className="text-center text-sm lg:text-lg font-semibold">
+          <div className="bg-sky-300 2xl:h-[550px] 2xl:px-16 py-4 lg:py-5 2xl:py-12 rounded-md cursor-pointer hover:scale-y-105 hover:scale-x-105 transition-transform duration-500 origin-bottom hover:bg-sky-400">
+            <div className="text-center text-sm 2xl:text-lg font-semibold">
               For Professionals
             </div>
-            <div className="lg:py-3 text-xl py-1.5 text-center lg:text-3xl font-bold">
+            <div className="2xl:py-3 text-xl py-1.5 text-center 2xl:text-3xl font-bold">
               <h1>Take Projects To Next Level</h1>
             </div>
-            <div className="lg:py-8 py-3 flex justify-center">
+            <div className="2xl:py-8 py-3 flex justify-center">
               <img src={photo3} alt="photo" className="lg:h-44 h-36" />
             </div>
             <div className="flex justify-center gap-1.5 py-2 text-sm">
@@ -149,24 +149,24 @@ export default function Landing() {
           </div>
         </NavLink>
       </div>
-      <div className="lg:px-[120px] lg:py-16 py-8">
+      <div className="2xl:px-[120px] 2xl:py-16 py-8">
         <div className="flex justify-center">
-          <img src={logo} alt="" className="lg:h-20 h-10" />
+          <img src={logo} alt="" className="xl:h-20 lg:h-16 h-10" />
         </div>
         <div className="flex justify-center lg:py-5 py-2">
-          <h1 className="lg:text-5xl font-bold">
+          <h1 className="xl:text-5xl lg:text-3xl font-bold">
             Design Anything, Build Everything
           </h1>
         </div>
-        <div className="flex justify-center lg:py-2">
-          <h2 className="lg:text-xl text-sm text-gray-700 text-justify">
+        <div className="flex justify-center xl:py-2">
+          <h2 className="xl:text-xl text-sm text-gray-700 text-justify">
             Design and launch your wesbite fast & no coding knowledge is
             required.
           </h2>
         </div>
       </div>
-      <div className="lg:px-[120px] lg:py-5 flex lg:flex-row flex-col">
-        <div className="lg:flex lg:flex-col grid grid-cols-3 gap-1.5 lg:gap-3 lg:w-1/4 pb-3">
+      <div className="xl:px-[120px] md xl:py-5 flex md:flex-row md:justify-center md:gap-10 flex-col">
+        <div className="md:flex md:flex-col grid grid-cols-3 gap-1.5 xl:gap-3 xl:w-1/4 pb-3">
           {[
             { key: "live", label: "Live Visual Builder", icon: <FaFileCode /> },
             {
@@ -200,7 +200,7 @@ export default function Landing() {
           ].map(({ key, label, icon }) => (
             <button
               key={key}
-              className={`lg:py-3 lg:px-5 py-2 px-1 lg:w-64 lg:text-xl text-[8px] font-semibold flex items-center gap-0.5 rounded-sm lg:rounded-md hover:bg-gray-100 ${
+              className={`xl:py-3 xl:px-5 lg:px-2 py-2 px-1 xl:w-64 lg:text-lg xl:text-xl text-[8px] lg:gap-1.5 font-semibold flex items-center gap-0.5 rounded-sm lg:rounded-md hover:bg-gray-100 ${
                 activeButton === key ? "bg-gray-100" : "bg-white"
               }`}
               onClick={() => handleClick(key)}
@@ -211,7 +211,7 @@ export default function Landing() {
           ))}
         </div>
         <div
-          className="lg:h-[600px] lg:w-3/4 h-48 rounded-md"
+          className="xl:h-[600px] lg:h-[500px] md:h-[300px] md:w-3/4 h-48 rounded-md"
           style={{
             backgroundImage: `url(${bgImage})`,
             backgroundSize: "cover",
@@ -219,7 +219,7 @@ export default function Landing() {
           }}
         ></div>
       </div>
-      <div className="lg:px-[120px] lg:py-28 py-16">
+      <div className="xl:px-[120px] lg:py-28 py-16">
         <div className="text-center">
           <h1 className="lg:text-5xl text-xl font-bold py-1 lg:py-3">
             All-In-One Website Builder
@@ -237,7 +237,7 @@ export default function Landing() {
               <h1 className="lg:text-2xl text-sm font-semibold py-1 lg:py-3">
                 109 Prebuilt Websites
               </h1>
-              <div className="text-gray-600 text-xs lg:text-[16px] lg:px-5 lg:leading-relaxed">
+              <div className="text-gray-600 text-xs text-justify lg:text-center lg:text-[16px] lg:px-5 lg:leading-relaxed">
                 <p>
                   Prebuilt websites are designed to save you time. Import with a
                   few clicks & customize it to suit your requirements.
@@ -251,7 +251,7 @@ export default function Landing() {
               <h1 className="lg:text-2xl text-sm font-semibold py-1 lg:py-3">
                 120+ Design Elements
               </h1>
-              <div className="text-gray-600 text-xs lg:text-[16px] lg:px-5 lg:leading-relaxed">
+              <div className="text-gray-600 text-xs text-justify lg:text-center lg:text-[16px] lg:px-5 lg:leading-relaxed">
                 <p>
                   Packed with options, they are highly flexible for any design &
                   for any purpose. The only limit is your imagination.
@@ -265,7 +265,7 @@ export default function Landing() {
               <h1 className="lg:text-2xl text-sm font-semibold py-1 lg:py-3">
                 Built For Performance
               </h1>
-              <div className=" text-gray-600 text-xs lg:text-[16px] lg:px-5 lg:leading-relaxed">
+              <div className=" text-gray-600 text-justify  lg:text-center text-xs lg:text-[16px] lg:px-5 lg:leading-relaxed">
                 <p>
                   Experience total control of your website's features that will
                   empower you to make superor performance-related decisions.
@@ -279,7 +279,7 @@ export default function Landing() {
               <h1 className="lg:text-2xl text-sm font-semibold py-1 lg:py-3">
                 Mobile Friedly
               </h1>
-              <div className="text-gray-600 text-xs lg:text-[16px] lg:px-5 lg:leading-relaxed">
+              <div className="text-gray-600 text-xs text-justify lg:text-center lg:text-[16px] lg:px-5 lg:leading-relaxed">
                 <p>
                   Nirvanta is 100% fluid & responsive across all device types,
                   from mobile to desktop & tablets, with no compromise.
@@ -293,7 +293,7 @@ export default function Landing() {
               <h1 className="lg:text-2xl text-sm font-semibold py-1 lg:py-3">
                 Dynamic Content
               </h1>
-              <div className="text-gray-600 text-xs lg:text-[16px] lg:px-5 lg:leading-relaxed">
+              <div className="text-gray-600 text-xs text-justify lg:text-center lg:text-[16px] lg:px-5 lg:leading-relaxed">
                 <p>
                   Build unique pages & post layouts for your website by
                   harnessing the power of Nirvanta's dynamic content
@@ -308,7 +308,7 @@ export default function Landing() {
               <h1 className="lg:text-2xl text-sm font-semibold py-1 lg:py-3">
                 Online Store Builder
               </h1>
-              <div className=" text-gray-600 text-xs lg:text-[16px] lg:px-5 lg:leading-relaxed">
+              <div className=" text-gray-600 text-xs text-justify lg:text-center lg:text-[16px] lg:px-5 lg:leading-relaxed">
                 <p>
                   Nirvanta is integrated with WooCommerce, allowing you to build
                   successful online stores to sell anything online.
@@ -325,7 +325,7 @@ export default function Landing() {
         </div>
       </div>
       <hr />
-      <div className="lg:py-20 py-10 lg:px-[120px]">
+      <div className="lg:py-20 py-10 xl:px-[120px]">
         <div className="text-center">
           <div className="flex lg:gap-2 gap-1 items-center justify-center lg:flex-col">
             <h1 className="lg:text-5xl text-[15px] font-semibold lg:font-bold text-zinc-800">
@@ -407,7 +407,7 @@ export default function Landing() {
         </div>
         <hr />
       </div>
-      <div className="lg:px-[120px]">
+      <div className="2xl:px-[120px]">
         <div className="bg-lime-400 lg:h-[500px] rounded-md flex flex-col-reverse lg:flex-row">
           <div className="lg:ml-20 lg:py-28 lg:w-1/2">
             <div className="lg:text-5xl text-2xl lg:text-start font-bold text-zinc-800 text-center">

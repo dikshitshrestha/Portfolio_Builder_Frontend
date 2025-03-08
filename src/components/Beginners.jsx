@@ -28,7 +28,7 @@ export default function Beginners() {
         <div className="h-full lg:w-1/2">
           <img src={photo} alt="photo" className="h-full object-cover" />
         </div>
-        <div className="h-full lg:flex lg:flex-col lg:justify-center lg:py-28 lg:w-1/2 lg:px-24 px-2 pt-5">
+        <div className="h-full lg:flex lg:flex-col lg:justify-center lg:py-28 lg:w-1/2 xl:px-24 lg:px-10 px-2 pt-5">
           <h1 className="lg:text-xl text-xs font-semibold text-zinc-800">
             Nirvanta Is For Beginners
           </h1>
@@ -63,7 +63,7 @@ export default function Beginners() {
             </div>
           </div>
           <div className="pt-4">
-            <div className="grid grid-cols-3 lg:grid-cols-7 gap-3 pl-6 lg:pl-0 lg:text-xl text-xs font-semibold lg:gap-4">
+            <div className="grid grid-cols-3 md:grid-cols-7 gap-3 pl-6 xl:pl-0 lg:px-3 lg:text-xl text-xs font-semibold lg:gap-4">
               <div className="lg:flex lg:justify-center">
                 <button className="lg:py-3 py-2 px-2 border-solid border lg:px-5 border-gray-300 rounded-md hover:border-black ease-in-out duration-200">
                   Corporate
@@ -139,7 +139,7 @@ export default function Beginners() {
         </div>
       </div>
       <BegginingFooter />
-      <div className="w-full pt-32 lg:px-[120px]">
+      <div className="w-full pt-32 xl:px-[120px]">
         <div className="text-center">
           <h1 className="lg:pb-8 pb-2 lg:text-5xl text-xl font-bold text-zinc-800">
             Why Choose Nirvanta?
@@ -153,7 +153,7 @@ export default function Beginners() {
             </p>
           </div>
         </div>
-        <div className="lg:py-20 py-10 flex lg:flex-row flex-col px-2 gap-4 lg:gap-14 rounded-md">
+        <div className="lg:py-20 py-10 flex md:flex-row flex-col px-2 gap-4 lg:gap-14 rounded-md">
           <div className="bg-yellow-200 lg:w-1/3 py-7 px-6 text-center rounded-md">
             <div className="flex justify-center">
               <FaStar className="text-white text-6xl" />
@@ -224,7 +224,7 @@ export default function Beginners() {
       </div>
       <div className="w-full z-10 top-[680px] pt-32">
         <hr />
-        <div className="lg:py-28 py-16 lg:px-[120px] relative">
+        <div className="lg:py-28 py-16 xl:px-[120px] relative">
           <div className="text-center lg:mb-20 mb-6">
             <h1 className="lg:text-5xl text-xl font-bold lg:mb-7">
               Nirvanta Setup Wizard
@@ -234,7 +234,7 @@ export default function Beginners() {
               websites on the fly and fast.
             </p>
           </div>
-          <div className="flex lg:flex-row flex-col gap-12">
+          <div className="flex md:flex-row flex-col md:gap-2 lg:gap-12 gap-12">
             <div className="lg:w-1/3 bg-gray-100 py-7 rounded-md lg:px-10 px-6 text-center">
               <div className="lg:h-40 flex items-center justify-center">
                 <img src={setup1} alt="setup1" />
@@ -279,12 +279,12 @@ export default function Beginners() {
             </div>
           </div>
         </div>
-        <div className="bg-yellow-50 lg:px-[180px] flex lg:flex-row flex-col-reverse">
-          <div className="lg:w-1/2 flex flex-col justify-center py-3">
-            <h1 className="lg:text-5xl text-xl text-center font-bold">
+        <div className="bg-yellow-50 xl:px-[180px] lg:px-10 lg:gap-5 flex md:flex-row flex-col-reverse">
+          <div className="md:w-1/2 flex flex-col justify-center py-3">
+            <h1 className="lg:text-5xl lg:text-left text-xl text-center font-bold">
               Nirvanta Studio
             </h1>
-            <div className="lg:py-8 py-3 text-sm text-justify px-2 lg:text-[18px] text-zinc-600">
+            <div className="lg:py-8 py-3 lg:leading-relaxed text-sm text-justify lg:px-0 px-2 lg:text-[18px] text-zinc-600">
               <p>
                 Expansive library of multi-use content designed professionally
                 to speed up your workflow. Get a head start with prebuilt
@@ -292,7 +292,7 @@ export default function Beginners() {
                 between.
               </p>
             </div>
-            <div className="flex justify-center">
+            <div className="flex lg:justify-start justify-center">
               <button className="flex items-center gap-4">
                 <p className="underline lg:text-[18px] font-semibold">
                   Explore Prebuilt Content
@@ -301,12 +301,12 @@ export default function Beginners() {
               </button>
             </div>
           </div>
-          <div className="lg:w-1/2 lg:mt-16 mt-4 lg:h-[400px] object-cover">
+          <div className="md:w-1/2 lg:mt-16 mt-4 lg:h-[400px] object-cover">
             <img src={bgphoto} alt="bg" className="h-full rounded-t-md" />
           </div>
         </div>
-        <div className="lg:px-[120px] lg:py-32 py-12 flex flex-col lg:flex-row items-center gap-6 lg:gap-16">
-          <div className="lg:w-2/3 bg-gray-100 lg:gap-5 flex lg:flex-row flex-col-reverse justify-evenly items-center lg:h-[400px] p-8 rounded-md">
+        <div className="lg:px-[120px] lg:py-32 py-12 flex flex-col md:flex-row items-center gap-6 lg:gap-16">
+          <div className="md:w-2/3 bg-gray-100 lg:gap-5 flex lg:flex-row flex-col-reverse justify-evenly items-center lg:h-[400px] p-8 rounded-md">
             <div className="w-1/2">
               <h1 className="lg:text-3xl text-xl font-bold lg:mb-5 py-3 text-center">
                 Mobile Ready
@@ -322,7 +322,7 @@ export default function Beginners() {
               <img src={dynamic} alt="dynamic" className="lg:h-52 h-28" />
             </div>
           </div>
-          <div className="lg:w-1/3 bg-amber-200 rounded-md text-center flex flex-col justify-center h-full gap-2 py-4 lg:pt-12 lg:pb-16">
+          <div className="md:w-1/3 bg-amber-200 rounded-md text-center flex flex-col justify-center h-full gap-2 py-4 lg:pt-12 lg:pb-16">
             <div className="flex justify-center text-8xl">
               <CiCircleCheck />
             </div>
@@ -337,7 +337,7 @@ export default function Beginners() {
             </div>
           </div>
         </div>
-        <div className="lg:px-[120px] flex lg:flex-row gap-10 flex-col justify-evenly">
+        <div className="lg:px-[120px] flex md:flex-row gap-10 flex-col justify-evenly">
           <div className="text-center lg:w-1/3">
             <div className="flex items-center justify-center">
               <img src={clients} alt="" className="h-64" />

@@ -32,7 +32,7 @@ export default function Marketers() {
             className="h-full object-cover w-full"
           />
         </div>
-        <div className="lg:w-1/2 h-full lg:py-28 py-8 px-4 lg:px-24 flex flex-col gap-2 lg:gap-6 bg-lime-300">
+        <div className="lg:w-1/2 h-full lg:py-28 py-8 px-4 justify-center lg:px-10 xl:px-24 flex flex-col gap-2 lg:gap-6 bg-lime-300">
           <h1 className="text-sm lg:text-xl font-semibold">
             Nirvanta Is For Marketers
           </h1>
@@ -53,7 +53,7 @@ export default function Marketers() {
           </div>
         </div>
       </div>
-      <div className="flex lg:flex-row lg:px-[120px] flex-col justify-evenly text-center lg:py-28 py-16 gap-12">
+      <div className="flex lg:flex-row xl:px-[120px] flex-col justify-evenly text-center lg:py-28 py-16 gap-12">
         <div>
           <div className="flex items-center justify-center text-4xl lg:pb-5 pb-2">
             <GiMoebiusTriangle />
@@ -102,7 +102,7 @@ export default function Marketers() {
           </a>
         </div>
       </div>
-      <div className="bg-lime-100 py-16 lg:py-28 lg:px-[170px]">
+      <div className="bg-lime-100 py-16 lg:py-28 xl:px-[170px]">
         <div className="text-center">
           <h1 className="lg:text-5xl font-bold text-zinc-800">
             Design Freedom
@@ -165,7 +165,7 @@ export default function Marketers() {
           </div>
         </div>
       </div>
-      <div className="lg:py-28 py-14 lg:px-[120px]">
+      <div className="lg:py-28 py-14 xl:px-[120px]">
         <div className="text-center">
           <h1 className="lg:text-5xl text-xl font-bold text-zinc-800">
             Create Any Website, Fast!
@@ -178,7 +178,7 @@ export default function Marketers() {
             </p>
           </div>
         </div>
-        <div className="flex lg:flex-row flex-col py-5 lg:mt-20 gap-16">
+        <div className="flex md:flex-row flex-col py-5 lg:mt-20 gap-16">
           <div className="lg:w-1/3 text-center">
             <div className="lg:h-[300px] h-52">
               <img
@@ -190,7 +190,7 @@ export default function Marketers() {
             <h1 className="lg:text-2xl font-semibold lg:pb-3 lg:pt-8 py-3 text-xl">
               Prebuilt Websites & Content
             </h1>
-            <div className="text-zinc-700 lg:text-center px-2 text-justify text-sm">
+            <div className="text-zinc-700 md:text-center px-2 text-justify text-sm">
               <p>
                 Prebuilt resources are designed to save you time, providing your
                 workflow with an extensive library of style & design choices.
@@ -204,7 +204,7 @@ export default function Marketers() {
             <h1 className="lg:text-2xl font-semibold lg:pb-3 lg:pt-8 text-xl py-3">
               No Coding Knowledge Required
             </h1>
-            <div className="text-zinc-700 lg:text-center text-sm text-justify px-2">
+            <div className="text-zinc-700 md:text-center text-sm text-justify px-2">
               <p>
                 Years of evolution guarantee that Nirvanta’s website building
                 tools are intuitive, with an extensive range of options.
@@ -222,7 +222,7 @@ export default function Marketers() {
             <h1 className="lg:text-2xl font-semibold lg:pb-3 lg:pt-8 text-xl py-3">
               World-Class Support
             </h1>
-            <div className="text-zinc-700 lg:text-center text-sm text-justify px-2">
+            <div className="text-zinc-700 md:text-center text-sm text-justify px-2">
               <p>
                 Our team focuses on building long-term professional
                 relationships with our customers that you can rely on & trust.
@@ -232,7 +232,7 @@ export default function Marketers() {
         </div>
       </div>
       <hr />
-      <div className="lg:pt-28 lg:pb-14 lg:px-[150px]">
+      <div className="lg:pt-28 lg:pb-14 xl:px-[150px]">
         <div className="text-center">
           <h1 className="lg:text-5xl text-xl font-bold text-zinc-800">
             Launch Websites That Sell
@@ -245,8 +245,8 @@ export default function Marketers() {
             </p>
           </div>
         </div>
-        <div className="flex lg:flex-row flex-col-reverse lg:py-10 py-5">
-          <div className="lg:w-1/2 flex flex-col justify-center lg:pl-8">
+        <div className="flex md:flex-row flex-col-reverse lg:py-10 py-5">
+          <div className="md:w-1/2 flex flex-col justify-center xl:pl-8">
             <h1 className="lg:text-4xl text-xl text-center font-bold text-zinc-800">
               Online Store Builder
             </h1>
@@ -266,7 +266,7 @@ export default function Marketers() {
               </a>
             </div>
           </div>
-          <div className="lg:w-1/2 py-4">
+          <div className="md:w-1/2 py-4">
             <div className="lg:h-96 h-36 flex items-center">
               <img
                 src={website}
@@ -276,13 +276,13 @@ export default function Marketers() {
             </div>
           </div>
         </div>
-        <div className="flex lg:flex-row flex-col lg:py-10 py-5">
-          <div className="lg:w-1/2 py-4 px-2">
+        <div className="flex md:flex-row flex-col lg:py-10 py-5">
+          <div className="md:w-1/2 py-4 px-2">
             <div className="lg:h-96 h-52 flex items-center">
               <img src={canvas} alt="" className="w-full h-full object-cover" />
             </div>
           </div>
-          <div className="lg:w-1/2 lg:h-[400px] flex flex-col justify-center lg:pl-32">
+          <div className="md:w-1/2 lg:h-[400px] flex flex-col justify-center xl:pl-32">
             <h1 className="lg:text-4xl text-xl text-center font-bold text-zinc-800">
               Off-Canvas Builder
             </h1>
@@ -304,8 +304,8 @@ export default function Marketers() {
             </div>
           </div>
         </div>
-        <div className="flex py-10 lg:flex-row flex-col-reverse">
-          <div className="lg:w-1/2 flex flex-col justify-center lg:pl-8">
+        <div className="flex py-10 md:flex-row flex-col-reverse">
+          <div className="md:w-1/2 flex flex-col justify-center xl:pl-8">
             <h1 className="lg:text-4xl text-xl text-center font-bold text-zinc-800">
               Form Builder
             </h1>
@@ -331,7 +331,7 @@ export default function Marketers() {
           </div>
         </div>
       </div>
-      <div className="grid lg:grid-cols-3 lg:grid-rows-2 lg:gap-14 gap-7 px-4 lg:px-[120px] pb-20 text-center">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 lg:grid-rows-2 xl:gap-14 gap-7 px-4 xl:px-[120px] pb-20 text-center">
         <div className="bg-gray-100 h-[450px] px-10 py-14 rounded-md">
           <div>
             <h1 className="font-semibold text-2xl">Plugin Integrations</h1>
@@ -343,7 +343,7 @@ export default function Marketers() {
             <img src={plug} alt="plugins" />
           </div>
         </div>
-        <div className="bg-gray-100 px-10 py-14 rounded-md">
+        <div className="bg-gray-100 h-[450px] px-10 py-14 rounded-md">
           <div>
             <h1 className="font-semibold text-2xl">Website Performance</h1>
           </div>
@@ -356,7 +356,7 @@ export default function Marketers() {
             <img src={performance} alt="plugins" className="h-full" />
           </div>
         </div>
-        <div className="bg-gray-100 px-10 py-14 rounded-md">
+        <div className="bg-gray-100 h-[450px] px-10 py-14 rounded-md">
           <div>
             <h1 className="font-semibold text-2xl">Avada Motion Effects</h1>
           </div>
@@ -370,7 +370,7 @@ export default function Marketers() {
             <img src={motion} alt="plugins" />
           </div>
         </div>
-        <div className="bg-gray-100 px-10 py-14 rounded-md">
+        <div className="bg-gray-100 h-[450px] px-10 py-14 rounded-md">
           <div>
             <h1 className="font-semibold text-2xl">Mobile Friendly</h1>
           </div>
@@ -383,7 +383,7 @@ export default function Marketers() {
             <img src={mobile} alt="plugins" />
           </div>
         </div>
-        <div className="bg-gray-100 px-10 py-14 rounded-md">
+        <div className="bg-gray-100 h-[450px] px-10 py-14 rounded-md">
           <div>
             <h1 className="font-semibold text-2xl">SEO Friendly</h1>
           </div>
@@ -397,7 +397,7 @@ export default function Marketers() {
             <img src={seo} alt="plugins" />
           </div>
         </div>
-        <div className="bg-gray-100 px-10 py-14 rounded-md">
+        <div className="bg-gray-100 h-[450px] px-10 py-14 rounded-md">
           <div>
             <h1 className="font-semibold text-2xl">Multilangual Support</h1>
           </div>
@@ -412,9 +412,9 @@ export default function Marketers() {
           </div>
         </div>
       </div>
-      <div className="bg-yellow-50 lg:px-[180px] flex flex-col-reverse lg:gap-10 py-5 lg:flex-row mb-10">
-        <div className="lg:w-1/2 flex flex-col justify-center">
-          <h1 className="lg:text-5xl text-xl font-bold lg:text-start text-center">
+      <div className="bg-yellow-50 h-[450px] lg:px-10 overflow-hidden xl:px-[180px] flex flex-col-reverse lg:gap-10 py-5 md:flex-row mb-10">
+        <div className="md:w-1/2 flex flex-col justify-center">
+          <h1 className="lg:text-5xl text-xl font-bold md:text-start text-center">
             Nirvanta Studio
           </h1>
           <div className="lg:py-8 py-4 text-sm text-justify px-2 lg:px-0 lg:leading-relaxed lg:text-[18px] text-zinc-600">
@@ -424,7 +424,7 @@ export default function Marketers() {
               footers, containers to elements, and everythinh in between.
             </p>
           </div>
-          <div className="flex justify-center lg:justify-start">
+          <div className="flex justify-center md:justify-start">
             <button className="flex items-center lg:gap-4 gap-1">
               <p className="underline text-sm lg:text-[18px] font-semibold">
                 Explore Prebuilt Content

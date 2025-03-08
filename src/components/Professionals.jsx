@@ -67,7 +67,7 @@ export default function Professionals() {
             className="h-full w-full object-cover"
           />
         </div>
-        <div className="lg:w-1/2 h-full lg:py-28 py-8 px-2 lg:px-24 flex flex-col gap-2 lg:gap-6 bg-sky-300">
+        <div className="lg:w-1/2 h-full xl:py-28 py-8 px-2 xl:px-24 justify-center lg:pl-8 flex flex-col gap-2 lg:gap-6 bg-sky-300">
           <h1 className="text-sm lg:text-[18px] font-semibold">
             Nirvanta Is For Professionals
           </h1>
@@ -88,7 +88,7 @@ export default function Professionals() {
           </div>
         </div>
       </div>
-      <div className="lg:py-28 py-14 lg:px-[120px] flex lg:flex-row flex-col gap-10 lg:justify-evenly text-center">
+      <div className="lg:py-28 py-14 xl:px-[120px] flex md:flex-row flex-col gap-10 lg:justify-evenly text-center">
         <div className="flex flex-col lg:gap-4 gap-2">
           <div className="flex justify-center text-4xl">
             <PiSpeedometerFill />
@@ -96,7 +96,7 @@ export default function Professionals() {
           <h1 className="lg:text-2xl text-xl font-semibold">
             Accelerate Your Workflow
           </h1>
-          <div className="lg:text-[17px] lg:text-center text-sm text-justify px-2 text-zinc-600">
+          <div className="lg:text-[17px] md:text-center text-sm text-justify px-2 text-zinc-600">
             <p>
               With an intuitive Live Editor & an extensive library of prebuilt
               content.
@@ -116,7 +116,7 @@ export default function Professionals() {
           <h1 className="lg:text-2xl text-xl font-semibold">
             Superior Website Tools
           </h1>
-          <div className="lg:text-[17px] lg:text-center text-sm text-justify px-2 text-zinc-600">
+          <div className="lg:text-[17px] md:text-center text-sm text-justify px-2 text-zinc-600">
             <p>
               You have total design control to deliver scalable client websites
               fast.
@@ -136,7 +136,7 @@ export default function Professionals() {
           <h1 className="lg:text-2xl text-xl font-semibold">
             Build Websites For The Future
           </h1>
-          <div className="lg:text-[17px] lg:text-center text-sm text-justify px-2 text-zinc-600">
+          <div className="lg:text-[17px] md:text-center text-sm text-justify px-2 text-zinc-600">
             <p>
               Receive free updates, compatible with industry standards & trends,
               for life.
@@ -150,7 +150,7 @@ export default function Professionals() {
           </a>
         </div>
       </div>
-      <div className="h-auto lg:py-28 py-14 bg-sky-100 lg:px-[120px]">
+      <div className="h-auto lg:py-28 py-14 bg-sky-100 xl:px-[120px]">
         <div className="text-center">
           <h1 className="lg:text-5xl text-xl font-bold text-zinc-800">
             Accelerate Your Workflow
@@ -163,7 +163,7 @@ export default function Professionals() {
             </p>
           </div>
         </div>
-        <div className="flex lg:flex-row flex-col justify-evenly text-center py-10 gap-12">
+        <div className="flex md:flex-row flex-col justify-evenly text-center py-10 gap-12">
           <div className="lg:w-1/3">
             <div className="lg:h-56 h-52 px-2">
               <img
@@ -223,8 +223,8 @@ export default function Professionals() {
           <h1 className="text-center lg:text-4xl font-bold text-zinc-800">
             Build Each Aspect Of Your Site
           </h1>
-          <div className="lg:py-16 py-5 flex lg:flex-row flex-col gap-5 lg:gap-10">
-            <div className="grid grid-cols-3 grid-rows-2 lg:grid-cols-1 gap-2 h-full lg:gap-3 px-1">
+          <div className="lg:py-16 py-5 flex md:flex-row flex-col gap-5 lg:px-4 xl:gap-10 md:px-10">
+            <div className="grid grid-cols-3 grid-rows-2 md:grid-cols-1 gap-2 h-full lg:gap-3 px-1">
               {[
                 {
                   key: "header",
@@ -269,7 +269,7 @@ export default function Professionals() {
               ))}
             </div>
             <div
-              className="lg:h-[600px] lg:w-4/5 h-52"
+              className="lg:h-[600px] md:h-[300px] md:w-4/5 h-52"
               style={{
                 backgroundImage: `url(${bgImage})`,
                 backgroundSize: "cover",
@@ -278,7 +278,7 @@ export default function Professionals() {
             ></div>
           </div>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 gap-14 text-center">
+        <div className="grid grid-cols-1 xl:grid-cols-2 md:px-32 lg:px-0 lg:grid-rows-2 lg:place-items-center gap-14 text-center">
           <div className="lg:h-[550px] lg:w-[600px] bg-white rounded-md lg:p-16 p-4">
             <div className="lg:h-[300px] h-52">
               <img src={dynamic} alt="dynamic" className="h-full w-full" />
@@ -337,7 +337,7 @@ export default function Professionals() {
           </div>
         </div>
       </div>
-      <div className="lg:py-28 py-14 px-4 lg:px-[120px]">
+      <div className="lg:py-28 py-14 px-4 lg:px-10 xl:px-[120px]">
         <div className="text-center">
           <h1 className="lg:text-5xl text-xl font-bold text-zinc-800">
             Superior Website Tools
@@ -351,7 +351,7 @@ export default function Professionals() {
             </p>
           </div>
         </div>
-        <div className="pt-10 grid lg:grid-cols-2 grid-rows-4 gap-12 lg:gap-16">
+        <div className="pt-10 grid md:grid-cols-2 grid-rows-4 gap-12 lg:gap-16">
           <div className="lg:h-[250px] flex lg:flex-row flex-col">
             <div className="lg:w-1/2 flex items-center">
               <img src={standards} alt="standards" />
@@ -465,7 +465,7 @@ export default function Professionals() {
           </div>
           <div className="lg:h-[250px] flex lg:flex-row flex-col">
             <div className="lg:w-1/2 flex items-center justify-center">
-              <img src={branding} alt="" className="h-[220px]" />
+              <img src={branding} alt="" className="xl:h-[220px]" />
             </div>
             <div className="flex flex-col justify-center">
               <h1 className="lg:text-2xl py-3 text-xl text-center font-semibold">
@@ -481,7 +481,7 @@ export default function Professionals() {
           </div>
         </div>
       </div>
-      <div className="bg-sky-50 lg:px-[180px] flex lg:flex-row flex-col-reverse">
+      <div className="bg-sky-50 lg:px-10 xl:px-[180px] flex lg:flex-row flex-col-reverse">
         <div className="lg:w-1/2 flex flex-col justify-center">
           <h1 className="lg:text-5xl lg:text-start font-bold text-xl py-4 text-center">
             Nirvanta Studio
@@ -506,7 +506,7 @@ export default function Professionals() {
           <img src={bgphoto} alt="bg" className="h-full rounded-t-md" />
         </div>
       </div>
-      <div className="lg:py-28 py-14 lg:px-[120px]">
+      <div className="lg:py-28 py-14 lg:px-10 xl:px-[120px]">
         <div className="text-center">
           <h1 className="lg:text-5xl text-xl font-bold text-zinc-800">
             Build Websites For The Future
@@ -519,7 +519,7 @@ export default function Professionals() {
             </p>
           </div>
         </div>
-        <div className="text-center grid lg:grid-cols-3 grid-rows-2 gap-10 py-5 lg:gap-20 lg:mt-10">
+        <div className="text-center grid md:grid-cols-3 grid-rows-2 gap-10 py-5 lg:gap-20 lg:mt-10">
           <div>
             <div className="w-full h-32 flex justify-center items-center">
               <img src={track} alt="track" className="h-full" />

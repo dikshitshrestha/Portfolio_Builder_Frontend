@@ -4,8 +4,8 @@ import photo from "../assets/Portfolio1.jpg";
 import photo2 from "../assets/Portfolio2.jpg";
 export default function Hero() {
   return (
-    <div className="container mx-auto lg:px-[120px] lg:py-10 flex lg:flex-row flex-col-reverse justify-center items-center pb-8">
-      <div className="text-center lg:text-left lg:w-1/2 lg:pr-48">
+    <div className="container mx-auto lg:px-10 2xl:px-[120px] 2xl:py-10 flex lg:flex-row flex-col-reverse justify-center items-center pb-8">
+      <div className="text-center lg:text-left lg:w-1/2 xl:pr-48">
         <div className="lg:text-6xl py-3 font-bold">
           <h1>The Ultimate Portfolio Website Builder</h1>
         </div>
