@@ -7,134 +7,144 @@ import { FaUsersGear } from "react-icons/fa6";
 import { BsPatchQuestionFill } from "react-icons/bs";
 import { RiMoneyDollarCircleFill } from "react-icons/ri";
 import developer from "../assets/developer.jpg";
-import PageEnd from "./PageEnd.jsx";
 import { IoMdCheckmark } from "react-icons/io";
 
 export default function Customization() {
   return (
     <div className="container mx-auto">
-      <div className="h-[550px] flex">
-        <div className="w-1/2">
+      <div className="lg:h-[550px] flex lg:flex-row flex-col">
+        <div className="lg:w-1/2">
           <img src={expert} alt="expert" className="h-full object-cover" />
         </div>
-        <div className="w-1/2 bg-yellow-300 h-full px-24 flex flex-col justify-center">
-          <h1 className="text-[18px] font-semibold text-zinc-800">Partner</h1>
-          <div className="text-5xl font-bold text-zinc-800 pt-3 flex flex-col gap-1.5">
+        <div className="lg:w-1/2 bg-yellow-300 h-full lg:px-24 flex flex-col justify-center pb-3">
+          <h1 className="lg:text-[18px] text-sm font-semibold text-zinc-800 lg:text-start text-center py-2">
+            Partner
+          </h1>
+          <div className="lg:text-5xl font-bold text-zinc-800 lg:pt-2 flex justify-center lg:flex-col lg:gap-1.5 gap-1">
             <h1>Expert Nirvanta</h1>
             <h1>Customization</h1>
           </div>
-          <div className="text-[18px] py-8 text-zinc-800">
-            <p>Get premium development support from pre-vetted Nirvanta</p>
-            <p>& WordPress experts from our customization partners at</p>
-            <p>Codeable.</p>
+          <div className="lg:text-[18px] text-sm text-justify lg:text-start lg:leading-relaxed lg:pr-16 lg:py-8 py-3 lg:px-0 px-2 text-zinc-800">
+            <p>
+              Get premium development support from pre-vetted Nirvanta &
+              WordPress experts from our customization partners at Codeable.
+            </p>
           </div>
-          <div>
-            <button className="flex items-center text-white rounded-md gap-3 py-3 px-7 text-xl font-semibold bg-zinc-800 hover:bg-black ease-in-out duration-300">
+          <div className="flex justify-center lg:justify-start">
+            <button className="flex items-center text-white rounded-md lg:gap-3 gap-1.5 lg:py-3 lg:px-7 lg:text-xl text-sm px-3 py-2 font-semibold bg-zinc-800 hover:bg-black ease-in-out duration-300">
               Start a Project <FaArrowRight />
             </button>
           </div>
         </div>
       </div>
-      <div className="py-28">
+      <div className="lg:py-28 py-16">
         <div className="flex justify-center">
-          <img src={codeable} alt="codeable" className="h-24" />
+          <img src={codeable} alt="codeable" className="lg:h-24 h-10" />
         </div>
-        <div className="text-center py-10 text-3xl font-bold text-zinc-800">
-          <h1>Your Hub Of World-Class Experts For Short-Term, Recurring,</h1>
-          <h1>And Full-time WordPress Work.</h1>
+        <div className="text-center lg:py-10 py-4 lg:text-3xl lg:leading-relaxed lg:px-80 text-xl font-bold text-zinc-800">
+          <h1>
+            Your Hub Of World-Class Experts For Short-Term, Recurring, And
+            Full-time WordPress Work.
+          </h1>
         </div>
         <div>
-          <div className="text-4xl flex justify-center text-yellow-400 pb-2">
+          <div className="lg:text-4xl text-xl flex justify-center text-yellow-400 pb-2">
             <FaStar />
             <FaStar />
             <FaStar />
             <FaStar />
             <FaStar />
           </div>
-          <h1 className="text-center text-zinc-700">Focused On Quality</h1>
+          <h1 className="text-center text-zinc-700 lg:text-xl text-sm">
+            Focused On Quality
+          </h1>
         </div>
-        <div className="flex pt-20 justify-evenly text-center items-center">
-          <div className="flex flex-col gap-4">
+        <div className="flex lg:flex-row flex-col lg:pt-20 px-20 pt-10 gap-8 lg:gap-0 lg:justify-evenly text-center items-center">
+          <div className="flex flex-col lg:gap-4 gap-2">
             <div className="text-4xl flex justify-center">
               <FaUsersGear />
             </div>
-            <h1 className="text-2xl font-semibold">Pre-Screened Developers</h1>
-            <div className="text-[17px] text-zinc-600">
-              <p>Your development work will be delivered by</p>
-              <p>hand-picked, world-class WordPress experts</p>
-              <p>who have passed a strict application and</p>
-              <p>vetting process.</p>
+            <h1 className="lg:text-2xl text-xl font-semibold">
+              Pre-Screened Developers
+            </h1>
+            <div className="lg:text-[17px] text-sm text-zinc-600 text-justify lg:leading-relaxed px-3 lg:px-16 lg:text-center">
+              <p>
+                Your development work will be delivered by hand-picked,
+                world-class WordPress experts who have passed a strict
+                application and vetting process.
+              </p>
             </div>
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col lg:gap-4 gap-2">
             <div className="text-4xl flex justify-center">
               <BsPatchQuestionFill />
             </div>
-            <h1 className="text-2xl font-semibold">Fast & Reliable Support</h1>
-            <div className="text-[17px] text-zinc-600">
-              <p>Our dedicated team of on-boarding assistants</p>
-              <p>and experts in support is available to help you</p>
-              <p>get any job done quickly, every step of the</p>
-              <p>way. All day, every day!</p>
+            <h1 className="lg:text-2xl text-xl font-semibold">
+              Fast & Reliable Support
+            </h1>
+            <div className="lg:text-[17px] text-sm text-zinc-600 text-justify lg:leading-relaxed px-3 lg:px-16 lg:text-center">
+              <p>
+                Our dedicated team of on-boarding assistants and experts in
+                support is available to help you get any job done quickly, every
+                step of the way. All day!
+              </p>
             </div>
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-1 lg:gap-4">
             <div className="text-4xl flex justify-center">
               <RiMoneyDollarCircleFill />
             </div>
-            <h1 className="text-2xl font-semibold">Money-Back Guarantee</h1>
-            <div className="text-[17px] text-zinc-600">
-              <p>Your work with Codeable experts is 100%</p>
-              <p>risk-free! Your developer will fix any bugs</p>
-              <p>for free for 28 days after project delivered</p>
-              <p>or we will provide a full refund if not satisfied.</p>
+            <h1 className="lg:text-2xl text-xl font-semibold">
+              Money-Back Guarantee
+            </h1>
+            <div className="lg:text-[17px] text-sm text-zinc-600 text-justify px-3 lg:leading-relaxed lg:px-16 lg:text-center">
+              <p>
+                Your work with Codeable experts is 100% risk-free! Your
+                developer will fix any bugs for free for 28 days after project
+                delivered or we will provide a full refund if not satisfied.
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <div className="py-20 px-[120px] bg-lime-100 flex h-[700px]">
-        <div className="w-3/7">
+      <div className="lg:py-20 lg:px-[120px] bg-lime-100 flex lg:flex-row flex-col lg:h-[700px] h-full">
+        <div className="lg:w-3/7 p-5 lg:p-0">
           <img src={developer} alt="" className="h-full w-full object-cover" />
         </div>
-        <div className="w-3/5 flex items-center pl-20">
-          <div>
-            <div className="text-3xl font-bold">
-              <h1>Top Rated & World-Class Developers</h1>
-              <h1>For Your Avada Project</h1>
+        <div className="lg:w-3/5 flex items-center lg:pl-20 px-3 lg:px-0">
+          <div className="lg:flex lg:flex-col lg:gap-6">
+            <div className="lg:text-3xl text-[17px] font-bold">
+              <h1>
+                Top Rated & World-Class Developers For Your Nirvanta Project
+              </h1>
             </div>
-            <div className="text-[18px] py-8 text-zinc-700">
-              <p>Get on-demand help with your WordPress site by posting your</p>
+            <div className="lg:text-[18px] text-zinc-700  lg:leading-relaxed py-3 text-sm text-justify">
               <p>
+                Get on-demand help with your WordPress site by posting your
                 project and having vetted WordPress developers provide a free
-              </p>
-              <p>
                 estimate. Codeable provides a healthy working environment for
-                both
+                both clients and WordPress experts to meet and complete high
+                quality work together.
               </p>
-              <p>
-                clients and WordPress experts to meet and complete high quality
-              </p>
-              <p>work together.</p>
             </div>
-            <div className="pb-8 flex flex-col gap-2 text-zinc-700">
+            <div className="flex flex-col gap-2 lg:gap-4 text-zinc-700 text-sm lg:text-[17px]">
               <p className="flex items-center gap-4">
                 <IoMdCheckmark className="text-green-500" /> Focused on quality
                 – 4.95/5 average project rating
               </p>
-              <hr />
+
               <p className="flex items-center gap-4">
                 <IoMdCheckmark className="text-green-500" />
                 Free estimates, no obligation to hire, 100% risk free
               </p>
-              <hr />
+
               <p className="flex items-center gap-4">
                 <IoMdCheckmark className="text-green-500" />
                 One-time or ongoing WordPress projects of any size
               </p>
-              <hr />
             </div>
-            <div>
-              <button className="bg-zinc-800 py-3 text-white rounded-md px-7 text-xl font-semibold flex items-center gap-3 hover:bg-black duration-300 ease-in-out">
+            <div className="flex justify-center py-4 lg:justify-start">
+              <button className="bg-zinc-800 py-3 text-white rounded-md lg:px-7 px-5 lg:text-xl text-xs font-semibold flex items-center lg:gap-3 gap-1 hover:bg-black duration-300 ease-in-out">
                 Hire a Codeable Expert <FaArrowRight />
               </button>
             </div>

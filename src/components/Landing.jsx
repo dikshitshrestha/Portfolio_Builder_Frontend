@@ -25,7 +25,6 @@ import logo3 from "../assets/logo3.png";
 import logo4 from "../assets/logo4.png";
 import image1 from "../assets/Portfolio1.jpg";
 import image2 from "../assets/Portfolio2.jpg";
-import PageEnd from "./PageEnd";
 import { useState } from "react";
 import bg1 from "../assets/bg.jpg";
 import bg2 from "../assets/document.jpg";
@@ -60,19 +59,18 @@ export default function Landing() {
     setBgImage(images[key]);
   }
   return (
-    <div className="container mx-auto">
-      <div className="lg:px-[120px] 2xl:px-0 py-20 flex gap-7">
-        <NavLink to="/beginners" className="w-1/3">
-          <div className="bg-yellow-300 h-[550px] px-16 py-12 rounded-md cursor-pointer hover:scale-y-105 hover:scale-x-105 transition-transform duration-500 origin-bottom hover:bg-yellow-400">
-            <div className="text-center text-lg font-semibold">
+    <div className="container mx-auto px-4">
+      <div className="lg:px-[120px] xl:px-[120px] gap-5 lg:py-20 flex lg:flex-row flex-col lg:gap-7">
+        <NavLink to="/beginners" className="w-full">
+          <div className="bg-yellow-300 lg:h-[550px] lg:px-16 py-4 lg:py-12 rounded-md cursor-pointer hover:scale-y-105 hover:scale-x-105 transition-transform duration-500 origin-bottom hover:bg-yellow-400">
+            <div className="text-center text-sm lg:text-lg font-semibold">
               For Beginners
             </div>
-            <div className="py-3 text-center text-3xl font-bold">
-              <h1>Launch Your First</h1>
-              <h1>Website</h1>
+            <div className="lg:py-3 text-xl py-1.5 text-center lg:text-3xl font-bold">
+              <h1>Launch Your First Website</h1>
             </div>
-            <div className="py-8 flex justify-center">
-              <img src={photo1} alt="photo" className="h-44" />
+            <div className="lg:py-8 py-3 flex justify-center">
+              <img src={photo1} alt="photo" className="lg:h-44 h-36" />
             </div>
             <div className="flex justify-center py-2 gap-1.5">
               <div className="bg-yellow-500 px-3 py-1.5 rounded-md font-semibold text-gray-100 text-sm">
@@ -92,17 +90,16 @@ export default function Landing() {
             </div>
           </div>
         </NavLink>
-        <NavLink to="/marketers" className="w-1/3">
-          <div className="bg-lime-300 h-[550px] px-16 py-12 rounded-md cursor-pointer transition-transform duration-500 hover:scale-105 origin-bottom hover:bg-lime-400">
-            <div className="text-center text-lg font-semibold">
+        <NavLink to="/marketers" className="w-full">
+          <div className="bg-lime-300 lg:h-[550px] lg:px-16 py-4 lg:py-12 rounded-md cursor-pointer hover:scale-y-105 hover:scale-x-105 transition-transform duration-500 origin-bottom hover:bg-lime-400">
+            <div className="text-center text-sm lg:text-lg font-semibold">
               For Marketers
             </div>
-            <div className="py-3 text-center text-3xl font-bold">
-              <h1>Generate Leads and</h1>
-              <h1>Conversions</h1>
+            <div className="lg:py-3 text-xl py-1.5 text-center lg:text-3xl font-bold">
+              <h1>Generate Leads and Conversions</h1>
             </div>
-            <div className="py-8">
-              <img src={photo2} alt="photo" />
+            <div className="lg:py-8 py-3 flex justify-center">
+              <img src={photo2} alt="photo" className="lg:h-44 h-36" />
             </div>
             <div className="flex justify-center gap-1.5 py-2">
               <div className="px-3 py-1.5 bg-lime-600 rounded-md text-sm font-semibold text-gray-100">
@@ -122,19 +119,18 @@ export default function Landing() {
             </div>
           </div>
         </NavLink>
-        <NavLink to="/professionals" className="w-1/3">
-          <div className=" bg-sky-300 h-[550px] px-16 py-12 rounded-md cursor-pointer transition-transform duration-500 hover:scale-105 origin-bottom hover:bg-sky-400">
-            <div className="text-center text-lg font-semibold">
+        <NavLink to="/professionals" className="w-full">
+          <div className="bg-sky-300 lg:h-[550px] lg:px-16 py-4 lg:py-12 rounded-md cursor-pointer hover:scale-y-105 hover:scale-x-105 transition-transform duration-500 origin-bottom hover:bg-sky-400">
+            <div className="text-center text-sm lg:text-lg font-semibold">
               For Professionals
             </div>
-            <div className="py-3 text-center text-3xl font-bold">
-              <h1>Take Your Projects</h1>
-              <h1>To The Next Level</h1>
+            <div className="lg:py-3 text-xl py-1.5 text-center lg:text-3xl font-bold">
+              <h1>Take Projects To Next Level</h1>
             </div>
-            <div className="py-8 flex justify-center">
-              <img src={photo3} alt="photo" className="h-44" />
+            <div className="lg:py-8 py-3 flex justify-center">
+              <img src={photo3} alt="photo" className="lg:h-44 h-36" />
             </div>
-            <div className="flex justify-center py-2 gap-1.5 text-sm">
+            <div className="flex justify-center gap-1.5 py-2 text-sm">
               <div className="bg-sky-600 px-3 py-1.5 text-gray-100 font-semibold rounded-md">
                 All-in-one
               </div>
@@ -153,24 +149,24 @@ export default function Landing() {
           </div>
         </NavLink>
       </div>
-      <div className="px-[120px] py-16">
+      <div className="lg:px-[120px] lg:py-16 py-8">
         <div className="flex justify-center">
-          <img src={logo} alt="" className="h-20" />
+          <img src={logo} alt="" className="lg:h-20 h-10" />
         </div>
-        <div className="flex justify-center py-5">
-          <h1 className="text-5xl font-bold">
+        <div className="flex justify-center lg:py-5 py-2">
+          <h1 className="lg:text-5xl font-bold">
             Design Anything, Build Everything
           </h1>
         </div>
-        <div className="flex justify-center py-2">
-          <h2 className="text-xl text-gray-700">
+        <div className="flex justify-center lg:py-2">
+          <h2 className="lg:text-xl text-sm text-gray-700 text-justify">
             Design and launch your wesbite fast & no coding knowledge is
             required.
           </h2>
         </div>
       </div>
-      <div className="px-[120px] py-5 flex">
-        <div className="flex flex-col gap-3 w-1/4">
+      <div className="lg:px-[120px] lg:py-5 flex lg:flex-row flex-col">
+        <div className="lg:flex lg:flex-col grid grid-cols-3 gap-1.5 lg:gap-3 lg:w-1/4 pb-3">
           {[
             { key: "live", label: "Live Visual Builder", icon: <FaFileCode /> },
             {
@@ -204,18 +200,18 @@ export default function Landing() {
           ].map(({ key, label, icon }) => (
             <button
               key={key}
-              className={`py-3 px-5 w-64 text-xl font-semibold flex items-center gap-1.5 rounded-md hover:bg-gray-100 ${
+              className={`lg:py-3 lg:px-5 py-2 px-1 lg:w-64 lg:text-xl text-[8px] font-semibold flex items-center gap-0.5 rounded-sm lg:rounded-md hover:bg-gray-100 ${
                 activeButton === key ? "bg-gray-100" : "bg-white"
               }`}
               onClick={() => handleClick(key)}
             >
               {label}
-              {icon}
+              <div>{icon}</div>
             </button>
           ))}
         </div>
         <div
-          className="h-[600px] w-3/4 rounded-md"
+          className="lg:h-[600px] lg:w-3/4 h-48 rounded-md"
           style={{
             backgroundImage: `url(${bgImage})`,
             backgroundSize: "cover",
@@ -223,205 +219,224 @@ export default function Landing() {
           }}
         ></div>
       </div>
-      <div className="px-[120px] py-28">
+      <div className="lg:px-[120px] lg:py-28 py-16">
         <div className="text-center">
-          <h1 className="text-5xl font-bold">All-In-One Website Builder</h1>
-          <p className="mt-7 text-xl text-gray-600">
+          <h1 className="lg:text-5xl text-xl font-bold py-1 lg:py-3">
+            All-In-One Website Builder
+          </h1>
+          <p className="lg:mt-7 lg:text-xl mt-3 text-sm text-gray-600">
             Experience total control over your website creation process.
           </p>
         </div>
-        <div className="py-16">
-          <div className="flex items-center">
-            <div className="w-1/3 text-center">
+        <div className="lg:py-16 py-5">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="text-center">
               <div className="flex items-center justify-center">
-                <img src={prebuilt} alt="" className="h-52" />
+                <img src={prebuilt} alt="" className="lg:h-52 h-24" />
               </div>
-              <h1 className="text-2xl font-semibold">109 Prebuilt Websites</h1>
-              <div className="py-3 text-gray-600">
-                <p>Prebuilt websites are designed to save you time.</p>
-                <p>Import with a few clicks & customize it to suit</p>
-                <p>your requirements.</p>
+              <h1 className="lg:text-2xl text-sm font-semibold py-1 lg:py-3">
+                109 Prebuilt Websites
+              </h1>
+              <div className="text-gray-600 text-xs lg:text-[16px] lg:px-5 lg:leading-relaxed">
+                <p>
+                  Prebuilt websites are designed to save you time. Import with a
+                  few clicks & customize it to suit your requirements.
+                </p>
               </div>
             </div>
-            <div className="w-1/3 text-center">
+            <div className="text-center">
               <div className="flex items-center justify-center">
-                <img src={design} alt="" className="h-48" />
+                <img src={design} alt="" className="lg:h-52 h-24" />
               </div>
-              <h1 className="text-2xl font-semibold py-3">
+              <h1 className="lg:text-2xl text-sm font-semibold py-1 lg:py-3">
                 120+ Design Elements
               </h1>
-              <div className="text-gray-600">
-                <p>Packed with options, they are highly flexible for</p>
-                <p>any design & for any purpose. The only limit is</p>
-                <p>your imagination.</p>
+              <div className="text-gray-600 text-xs lg:text-[16px] lg:px-5 lg:leading-relaxed">
+                <p>
+                  Packed with options, they are highly flexible for any design &
+                  for any purpose. The only limit is your imagination.
+                </p>
               </div>
             </div>
-            <div className="w-1/3 text-center">
+            <div className="text-center">
               <div className="flex items-center justify-center">
-                <img src={performance} alt="" className="h-52" />
+                <img src={performance} alt="" className="lg:h-52 h-24" />
               </div>
-              <h1 className="text-2xl font-semibold py-3">
+              <h1 className="lg:text-2xl text-sm font-semibold py-1 lg:py-3">
                 Built For Performance
               </h1>
-              <div className=" text-gray-600">
-                <p>Experience total control of your website's</p>
-                <p>features that will empower you to make superor</p>
-                <p>performance-related decisions.</p>
+              <div className=" text-gray-600 text-xs lg:text-[16px] lg:px-5 lg:leading-relaxed">
+                <p>
+                  Experience total control of your website's features that will
+                  empower you to make superor performance-related decisions.
+                </p>
               </div>
             </div>
-          </div>
-          <div className="mt-14 flex items-center">
-            <div className="w-1/3 text-center">
+            <div className="text-center lg:mt-5">
               <div className="flex items-center justify-center">
-                <img src={dynamic} alt="" className="h-48" />
+                <img src={dynamic} alt="" className="lg:h-48 h-24" />
               </div>
-              <h1 className="text-2xl font-semibold py-3">Mobile Friedly</h1>
-              <div className="text-gray-600">
-                <p>Nirvanta is 100% fluid & responsive across all</p>
-                <p>device types, from mobile to desktop & tablets,</p>
-                <p>with no compromise.</p>
+              <h1 className="lg:text-2xl text-sm font-semibold py-1 lg:py-3">
+                Mobile Friedly
+              </h1>
+              <div className="text-gray-600 text-xs lg:text-[16px] lg:px-5 lg:leading-relaxed">
+                <p>
+                  Nirvanta is 100% fluid & responsive across all device types,
+                  from mobile to desktop & tablets, with no compromise.
+                </p>
               </div>
             </div>
-            <div className="w-1/3 text-center">
+            <div className="text-center lg:mt-5">
               <div className="flex items-center justify-center">
-                <img src={content} alt="" className="h-48" />
+                <img src={content} alt="" className="lg:h-48 h-24" />
               </div>
-              <h1 className="text-2xl font-semibold py-3">Dynamic Content</h1>
-              <div className="text-gray-600">
-                <p>Build unique pages & post layouts for your</p>
-                <p>website by harnessing the power of Nirvanta's</p>
-                <p>dynamic content functionality.</p>
+              <h1 className="lg:text-2xl text-sm font-semibold py-1 lg:py-3">
+                Dynamic Content
+              </h1>
+              <div className="text-gray-600 text-xs lg:text-[16px] lg:px-5 lg:leading-relaxed">
+                <p>
+                  Build unique pages & post layouts for your website by
+                  harnessing the power of Nirvanta's dynamic content
+                  functionality.
+                </p>
               </div>
             </div>
-            <div className="w-1/3 text-center">
+            <div className="text-center lg:mt-5">
               <div className="flex items-center justify-center">
-                <img src={shopping} alt="" className="h-48" />
+                <img src={shopping} alt="" className="lg:h-48 h-24" />
               </div>
-              <h1 className="text-2xl font-semibold py-3">
+              <h1 className="lg:text-2xl text-sm font-semibold py-1 lg:py-3">
                 Online Store Builder
               </h1>
-              <div className=" text-gray-600">
-                <p>Nirvanta is integrated with WooCommerce, allowing</p>
-                <p>you to build successful online stores to sell</p>
-                <p>anything online.</p>
+              <div className=" text-gray-600 text-xs lg:text-[16px] lg:px-5 lg:leading-relaxed">
+                <p>
+                  Nirvanta is integrated with WooCommerce, allowing you to build
+                  successful online stores to sell anything online.
+                </p>
               </div>
             </div>
           </div>
         </div>
         <div className="flex justify-center">
-          <button className="flex items-center gap-2 text-xl font-semibold text-white bg-zinc-800 px-6 py-3 rounded-md hover:bg-black">
+          <button className="flex items-center lg:gap-2 lg:text-xl text-xs gap-1 font-semibold text-white bg-zinc-800 lg:px-6 px-3 py-3 rounded-md hover:bg-black">
             Discover More
             <FaArrowRight />
           </button>
         </div>
       </div>
       <hr />
-      <div className="py-20 px-[120px]">
+      <div className="lg:py-20 py-10 lg:px-[120px]">
         <div className="text-center">
-          <h1 className="text-5xl font-bold text-zinc-800">
-            1,000+ Website Owners
-          </h1>
-          <h1 className="text-5xl font-bold text-zinc-800 py-2">
-            Trust Nirvanta
-          </h1>
-          <p className="py-6 text-xl text-zinc-600">
+          <div className="flex lg:gap-2 gap-1 items-center justify-center lg:flex-col">
+            <h1 className="lg:text-5xl text-[15px] font-semibold lg:font-bold text-zinc-800">
+              1,000+ Website Owners
+            </h1>
+            <h1 className="lg:text-5xl text-[15px] font-semibold lg:font-bold text-zinc-800 py-2">
+              Trust Nirvanta
+            </h1>
+          </div>
+          <p className="lg:py-6 py-1 lg:text-xl text-[10px] text-zinc-600">
             The #1 selling Website Builder on Themeforest for 12+ years.
           </p>
         </div>
-        <div className="flex py-14">
-          <div className="w-1/4">
+        <div className="flex flex-col gap-8 lg:flex-row lg:py-14 py-5">
+          <div className="">
             <div className="flex justify-center">
-              <img src={logo1} alt="logo" className="h-20" />
+              <img src={logo1} alt="logo" className="lg:h-20 h-10" />
             </div>
-            <div className="text-center py-5">
-              <h1 className="py-3 font-semibold text-xl">
+            <div className="text-center lg:py-5">
+              <h1 className="py-3 font-semibold lg:text-xl">
                 World-Class Support
               </h1>
-              <div className="text-zinc-600">
-                <p>We build long-term professional</p>
-                <p>relationships with our custimers</p>
-                <p>that you can rely on & trust.</p>
+              <div className="text-zinc-600 text-xs lg:text-[16px] lg:leading-relaxed">
+                <p>
+                  We build long-term professional relationships with our
+                  custimers that you can rely on & trust.
+                </p>
               </div>
             </div>
           </div>
-          <div className="w-1/4">
+          <div className="">
             <div className="flex justify-center">
-              <img src={logo2} alt="logo" className="h-20" />
+              <img src={logo2} alt="logo" className="lg:h-20 h-10" />
             </div>
-            <div className="text-center py-5">
-              <h1 className="py-3 text-xl font-semibold">
+            <div className="text-center lg:py-5">
+              <h1 className="py-3 lg:text-xl font-semibold">
                 Documentation & Tutorials
               </h1>
-              <div className="text-zinc-600">
-                <p>Over 550 help files & 200 tutorial</p>
-                <p>videos will make building websites</p>
-                <p>with Nirvants even easier and faster.</p>
+              <div className="text-zinc-600 text-xs lg:text-[16px] lg:leading-relaxed">
+                <p>
+                  Over 550 help files & 200 tutorial videos will make building
+                  websites with Nirvants even easier and faster.
+                </p>
               </div>
             </div>
           </div>
-          <div className="w-1/4">
+          <div className="">
             <div className="flex justify-center">
-              <img src={logo3} alt="logo" className="h-20" />
+              <img src={logo3} alt="logo" className="lg:h-20 h-10" />
             </div>
-            <div className="text-center py-5">
-              <h1 className="py-3 text-xl font-semibold">
+            <div className="text-center lg:py-5">
+              <h1 className="py-3 lg:text-xl font-semibold">
                 100% Built In-House
               </h1>
-              <div className="text-zinc-600">
-                <p>Nirvanta is not reliant on 3rd party</p>
-                <p>tools to deliver a reliable & stable</p>
-                <p>website building experience.</p>
+              <div className="text-zinc-600 text-xs lg:text-[16px] lg:leading-relaxed">
+                <p>
+                  Nirvanta is not reliant on 3rd party tools to deliver a
+                  reliable & stable website building experience.
+                </p>
               </div>
             </div>
           </div>
-          <div className="w-1/4">
+          <div className="">
             <div className="flex justify-center">
-              <img src={logo4} alt="logo" className="h-20" />
+              <img src={logo4} alt="logo" className="lg:h-20 h-10" />
             </div>
-            <div className="text-center py-5">
-              <h1 className="py-3 text-xl font-semibold">
+            <div className="text-center lg:py-5">
+              <h1 className="py-3 lg:text-xl font-semibold">
                 Free Lifetime Updates
               </h1>
-              <div className="text-zinc-600">
-                <p>Your website will receive free &</p>
-                <p>regular updates, compatible with</p>
-                <p>industry standards & trends, for life.</p>
+              <div className="text-zinc-600 text-xs lg:text-[16px] lg:leading-relaxed">
+                <p>
+                  Your website will receive free & regular updates, compatible
+                  with industry standards & trends, for life.
+                </p>
               </div>
             </div>
           </div>
         </div>
         <hr />
       </div>
-      <div className="px-[120px]">
-        <div className="bg-lime-400 h-[500px] rounded-md flex">
-          <div className="w-1/2 ml-20 py-28">
-            <div className="text-5xl font-bold text-zinc-800">
+      <div className="lg:px-[120px]">
+        <div className="bg-lime-400 lg:h-[500px] rounded-md flex flex-col-reverse lg:flex-row">
+          <div className="lg:ml-20 lg:py-28 lg:w-1/2">
+            <div className="lg:text-5xl text-2xl lg:text-start font-bold text-zinc-800 text-center">
               <h1>Build Successful</h1>
-              <h1 className="py-3">Websites With Nirvanta</h1>
+              <h1 className="lg:py-3">Websites With Nirvanta</h1>
             </div>
-            <div className="py-3 text-xl text-zinc-700">
-              <p>Whether your are a beginner, marketer, or professional,</p>
+            <div className="py-3 lg:text-xl lg:text-start text-zinc-700 px-2 text-justify">
               <p>
-                Nirvanta has the tools & resources you can rely on to succeed.
+                Whether your are a beginner, marketer, or professional, Nirvanta
+                has the tools & resources you can rely on to succeed.
               </p>
             </div>
-            <div className="py-8">
-              <button className="bg-zinc-800 py-3 px-6 gap-1.5 flex items-center text-xl text-gray-100 rounded-md hover:bg-black ease-in-out duration-300">
+            <div className="lg:py-8 py-2 flex lg:justify-start justify-center">
+              <button className="bg-zinc-800 lg:py-3 lg:px-6 gap-1.5 flex items-center text-sm py-2 px-4 lg:text-xl text-gray-100 rounded-md hover:bg-black ease-in-out duration-300">
                 Join Now <FaArrowRight />
               </button>
             </div>
           </div>
-          <div className="w-1/2 relative p-10">
+          <div className="relative p-10 lg:w-1/2">
             <img
               src={image1}
               alt="photo"
-              className="mr-10 rounded-md h-full object-cover"
+              className="lg:mr-10 rounded-md h-full object-cover"
             />
-            <div className="absolute -right-10 bottom-[10%]">
+            <div className="absolute right-2 bottom-[10%]">
               <img
                 src={image2}
                 alt="photo2"
-                className="h-40 w-40 rounded-md object-cover"
+                className="lg:h-40 lg:w-40 h-20 w-20 rounded-md object-cover"
               />
             </div>
           </div>
